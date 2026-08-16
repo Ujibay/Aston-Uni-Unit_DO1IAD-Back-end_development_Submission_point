@@ -1,0 +1,23 @@
+/* 	CS1IAD, Summative assessment 2
+    Apply your knowledge 3: Back-end development
+	Data Manipulation Language
+	Oliver Hannaford-Day Student ID: 260270485 */
+
+-- User creation
+INSERT INTO users (username, password, email) VALUES ('admin', '$2b$10$uYIFPDZpp9bTfZdTKkXMHufwsuYWIFh62uVb5JdTGobJ4ewdFcJKa', 'oli_hd@outlook.com');			-- First user: admin, password: TestPassword123, Email: My private email.
+INSERT INTO users (username, password, email) VALUES ('user123', '$2b$10$uYIFPDZpp9bTfZdTKkXMHufwsuYWIFh62uVb5JdTGobJ4ewdFcJKa', 'jeevacation@gmail.com');		-- Second user: user123, password: TestPassword123, Email: jeffrey epsteins email address.
+INSERT INTO users (username, password, email) VALUES ('Ujibay', '$2b$10$uYIFPDZpp9bTfZdTKkXMHufwsuYWIFh62uVb5JdTGobJ4ewdFcJKa', '260270485@aston.ac.uk');		-- Third user: Ujibay, password: TestPassword123, Email: My student email.
+INSERT INTO users (username, password, email) VALUES ('Rob', '$2b$10$uYIFPDZpp9bTfZdTKkXMHufwsuYWIFh62uVb5JdTGobJ4ewdFcJKa', 'support@astononline.ac.uk');		-- Fourth user: Rob, password: TestPassword123, Email: Aston Online Support.
+INSERT INTO users (username, password, email) VALUES ('Gordon', '$2b$10$uYIFPDZpp9bTfZdTKkXMHufwsuYWIFh62uVb5JdTGobJ4ewdFcJKa', 'gordon@cdtv.org.uk');			-- Fifth user: Gordon, password: TestPassword123, Email: not valid but on my domain.
+
+-- projects
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (1, 'SAS Driver: Morph OS', 'Write a SAS driver for PCIX interface in MorphOS, must work with original Toolbox HDD tools.', STR_TO_DATE('10-08-2026','%d-%m-%Y'), STR_TO_DATE('12-01-2027','%d-%m-%Y'), 'design');
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (2, 'MTR Mk3A LCE', 'Port the 68K Pascal code to ARM A10 C code, must work like original.', STR_TO_DATE('12-12-2026','%d-%m-%Y'), STR_TO_DATE('12-12-2030','%d-%m-%Y'), 'design');
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (3, 'Repair shop logger', 'Create a searchabe program for a repair company, leting engineers review past issues with same make/model of unit.', STR_TO_DATE('01-09-2026','%d-%m-%Y'), STR_TO_DATE('01-10-2026','%d-%m-%Y'), 'design');
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (4, 'Library management system', 'Write software to record inventory of a small library, with searchable database, barcode scanning and reservation system', STR_TO_DATE('20-06-2026','%d-%m-%Y'), STR_TO_DATE('20-09-2026','%d-%m-%Y'), 'testing');
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (5, 'Architects Planning Permission Tool', 'Create a tool to manage planning permission applications, tick box progression as documents are added to a project', STR_TO_DATE('05-08-2026','%d-%m-%Y'), STR_TO_DATE('05-11-2026','%d-%m-%Y'), 'development');
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (1, 'Pay to use Calculator App', 'A small Windows calculator application: When pressing equals loads a page offering a calculator subscription or pay to use service"', STR_TO_DATE('08-05-2026','%d-%m-%Y'), STR_TO_DATE('28-05-2026','%d-%m-%Y'), 'complete');
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (2, 'UDP Datalogger', 'Create a UDP based datalogger that sends "GET" to a PLC and records the return message to a CSV file. See Spec for more info', STR_TO_DATE('01-08-2026','%d-%m-%Y'), STR_TO_DATE('01-09-2026','%d-%m-%Y'), 'deployment');
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (3, 'Farmville 2000', 'Create a simple farming simulator that requires you to watch 1 advert a minute to play', STR_TO_DATE('10-01-2026','%d-%m-%Y'), STR_TO_DATE('10-06-2026','%d-%m-%Y'), 'complete');
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (4, 'Android FTP Program', 'Create simple FTP tool for phones that automatically uploads a user selected folder to an FTP server.', STR_TO_DATE('06-08-2026','%d-%m-%Y'), STR_TO_DATE('06-09-2026','%d-%m-%Y'), 'testing');
+INSERT INTO projects (uid, title, shortDescription, startDate, endDate, phase) VALUES (5, 'Web interface for RS232 paper tape reader/writer', 'For Raspberry Pi OS on Raspberry Pi Zero 2 W, Create a web interface with print and read functions, upload and download files, webcam stream of machine.', STR_TO_DATE('12-08-2026','%d-%m-%Y'), STR_TO_DATE('28-08-2026','%d-%m-%Y'), 'deployment');
